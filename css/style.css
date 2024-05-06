@@ -22,9 +22,7 @@ img {
 
 
   .container_grattage{
-padding-left: 15%;
-    padding-top: 70%;
-
+    padding-top: 50%;
   }
 
   #grattage {
@@ -43,7 +41,7 @@ padding-left: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-    color: #d51313;
+    color: #666666;
 
   }
   canvas {
@@ -58,6 +56,6 @@ padding-left: 15%;
     left: 0;
     width: 100vw; /* Largeur à 100% de la fenêtre */
     height: 100vh; /* Hauteur à 100% de la fenêtre */
-    z-index: 3; /* Augmente le z-index pour mettre l'image devant */
+    z-index: 1; /* Augmente le z-index pour mettre l'image devant */
   }
 }
