@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+
+/* Styles spécifiques aux mobiles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Empêche le défilement de la page */
+    background-color: rgb(0, 0, 0); /* Couleur de fond rouge teste */
+    position: relative; /* Position relative pour le stacking context */
+    z-index: 0; /* Z-index pour s'assurer que le fond est derrière l'image */
+  }
+
+
+  .container_grattage{
+padding-left: 15%;
+    padding-top: 70%;
+
+  }
+
+  #grattage {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: #cccc;
+    overflow: hidden;
+    z-index: 2;
+
+    border: 2px solid red;
+  }
+  #nomCache {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #d51313;
+
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .fullscreen-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largeur à 100% de la fenêtre */
+    height: 100vh; /* Hauteur à 100% de la fenêtre */
+    z-index: 3; /* Augmente le z-index pour mettre l'image devant */
+  }
+}
